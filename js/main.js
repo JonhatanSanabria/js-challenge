@@ -48,6 +48,7 @@ const createNewKey = async (newKey) => {
 }
 createNewKey() // insertar comillas dentro de la funcion y dentro de las comillas "nombre que le daremos a la llave" //
 // Pinta en la base de datos nueva info: llave {propiedad:"valor"} : newKey {name:"testing key"} //
+// Si la funcion se ejecuta sin contenido, aparecera: undefined {propiedad: "valor"} : undefined {name:"testing key"} //
 
 
 // Crear elementos dom de mi post //
