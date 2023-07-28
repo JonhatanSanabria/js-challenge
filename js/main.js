@@ -1,14 +1,15 @@
 //Peticion a la base de datos//
 const getPosts = async () => {
-    let response = await fetch("https://proyecto-jonhatan-default-rtdb.firebaseio.com/posts/post1/.json")
+    let response = await fetch("https://proyecto-jonhatan-default-rtdb.firebaseio.com/posts/.json")
     let data = await response.json()
+    console.log(data)
     return data
 }
 const testPost = async () => {
     let posts = await getPosts()
     console.log(posts)
+    return posts
 }
-getPosts()
 
 
 //crear elementos dom de mi post//
