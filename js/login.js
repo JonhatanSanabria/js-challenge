@@ -1,8 +1,8 @@
 
-// let token = localStorage.getItem("token");
-// console.log(token);
+let token = localStorage.getItem("token");
+console.log(token);
 
-// token && window.open("index.html", "_self");
+token && window.open("index.html", "_self");
 
 
 
@@ -62,7 +62,7 @@ textFields.forEach((field)=>{
 
 
 document.getElementById("login-button").addEventListener("click", () => {       
-    if(user.name) {
+    if(user) {
         
         localStorage.setItem(
             "token",
