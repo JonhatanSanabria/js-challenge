@@ -1,3 +1,8 @@
+let token = localStorage.getItem("token");
+console.log(token);
+
+!token && window.open("formLogin.html", "_self");
+
 /// Peticion a la base de datos ///
 const getPostInfo = async () => {
     let response = await fetch("https://proyecto-jonhatan-default-rtdb.firebaseio.com/posts/.json")
